@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Safari, iOS, and Android */
+	-webkit-tap-highlight-color: transparent; /* For other browsers supporting -webkit-tap-highlight-color property */
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms; 
+	transition-duration: 300ms; 
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: black;
+	color: white;
+}
+
+body {
+	font-family: WorkSansRegular;
+  	line-height: normal;
+	transition: all .3s;
+}
+
+img, button {
+	user-select: none;
+}
+
+.footer-item {
+	position: relative;
+	transition: all .3s ease-in;
+}
+
+.footer-item:hover::after {
+	position: absolute;
+	right: 0;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: black;
+	bottom: 0;
+}
+
+.bg-first {
+	background: linear-gradient(234deg, #0D1E20 -73.12%, #313E2A 53.36%, #262D20 103.17%), #FFF;
+}
+  
+.bg-details {
+	background: linear-gradient(90deg, #323E2A 0%, #101815 100%); 
+}
+  
+.bg-header {
+	background: linear-gradient(180deg, rgba(240, 242, 245, 0.00) 0.02%, #F0F2F5 220.8%);
+}
+  
+.bg-cta {
+	background: linear-gradient(90deg, #CC522B 0%, #FF6636 100%);
+}
+
+.gradient {
+	background: var(--personal-gradiant-gradiant-2, linear-gradient(90deg, #F8FAFF 0%, #EEF4FF 44.4%, #FFECEC 100%)); 
+}
+
+.gradient2 {
+	background: var(--personal-gradiant-grediant-1, linear-gradient(80deg, #F8D9D8 0.47%, #F5F6F7 22.95%, #F5F6F7 47.97%, #F5F6F7 73.13%, #F3DFED 100.83%)); 
+}
+
+.project1 {
+	background: var(--personal-gradiant-gradiant-3, linear-gradient(75deg, #E7F3F2 0%, #EBF4F8 52.07%, #DFEEF9 102.02%)); 
+}
+
+.project2 {
+	background: var(--personal-gradiant-gradiant-4, linear-gradient(75deg, #F5E9F1 0%, #EBF4F8 52.07%, #F7E3E2 102.02%)); 
+}
+
+.project3 {
+	background: var(--personal-gradiant-gradiant-5, linear-gradient(75deg, #F4E8F3 0%, #F3EFF6 52.07%, #EEE0F9 102.02%)); 
+}
+
+.btn {
+	background: var(--personal-gradiant-gradiant-4, linear-gradient(75deg, #F5E9F1 0%, #EBF4F8 52.07%, #F7E3E2 102.02%)); 
+}
+
+.bg-shayna-hero {
+	background-image: url('./assets/shaynaHero.jpeg');
+}  
+
+.bg-9hwi {
+	background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%); 
+}
+
+@font-face {
+	font-family: TerminaBold;
+	src: url('./fonts/TerminaBold.otf') format('opentype');
+}
+
+/* Work Sans Fonts */
+
+@font-face {
+	font-family: WorkSansLight;
+	src: url('./fonts/worksans/WorkSansLight.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansRegular;
+	src: url('./fonts/worksans/WorkSansRegular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansMedium;
+	src: url('./fonts/worksans/WorkSansMedium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansSemiBold;
+	src: url('./fonts/worksans/WorkSansSemiBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansBold;
+	src: url('./fonts/worksans/WorkSansBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansExtraBold;
+	src: url('./fonts/worksans/WorkSansExtraBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansBlack;
+	src: url('./fonts/worksans/WorkSansBlack.ttf') format('opentype');
+}
+
+/* Inter Fonts */
+
+@font-face {
+	font-family: interLight;
+	src: url('./fonts/inter/interLight.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interRegular;
+	src: url('./fonts/inter/interRegular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interMedium;
+	src: url('./fonts/inter/interMedium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interSemiBold;
+	src: url('./fonts/inter/interSemiBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interBold;
+	src: url('./fonts/inter/interBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: WorkSansExtraBold;
+	src: url('./fonts/worksans/WorkSansExtraBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interBlack;
+	src: url('./fonts/inter/interBlack.ttf') format('opentype');
+}
+
+/* Montserrat Fonts */
+
+@font-face {
+	font-family: montRegular;
+	src: url('./fonts/montserrat/montRegular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: montMedium;
+	src: url('./fonts/montserrat/montMedium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: montSemiBold;
+	src: url('./fonts/montserrat/montSemiBold.ttf') format('opentype');
+}
+
+/* Poppins Fonts */
+
+@font-face {
+	font-family: poppinsLight;
+	src: url('./fonts/poppins/poppinsLight.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: poppinsRegular;
+	src: url('./fonts/poppins/poppinsRegular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: poppinsMedium;
+	src: url('./fonts/poppins/poppinsMedium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: poppinsSemiBold;
+	src: url('./fonts/poppins/poppinsSemiBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: poppinsBold;
+	src: url('./fonts/poppins/poppinsBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: poppinsExtraBold;
+	src: url('./fonts/poppins/poppinsExtraBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: interBlack;
+	src: url('./fonts/poppins/poppinsBlack.ttf') format('opentype');
+}
+
+/* DM Fonts */
+
+@font-face {
+	font-family: DMSansThin;
+	src: url('./fonts/DM_Sans/DMSans-Thin.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansLight;
+	src: url('./fonts/DM_Sans/DMSans-Light.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansRegular;
+	src: url('./fonts/DM_Sans/DMSans-Regular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansMedium;
+	src: url('./fonts/DM_Sans/DMSans-Medium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansSemiBold;
+	src: url('./fonts/DM_Sans/DMSans-SemiBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansBold;
+	src: url('./fonts/DM_Sans/DMSans-Bold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansExtraBold;
+	src: url('./fonts/DM_Sans/DMSans-ExtraBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: DMSansBlack;
+	src: url('./fonts/DM_Sans/DMSans-Black.ttf') format('opentype');
+}
+
+/* Raleway Fonts */
+
+@font-face {
+	font-family: ralewayThin;
+	src: url('./fonts/raleway/ralewayThin.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayLight;
+	src: url('./fonts/raleway/ralewayLight.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayRegular;
+	src: url('./fonts/raleway/ralewayRegular.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayMedium;
+	src: url('./fonts/raleway/ralewayMedium.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewaySemiBold;
+	src: url('./fonts/raleway/ralewaySemiBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayBold;
+	src: url('./fonts/raleway/ralewayBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayExtraBold;
+	src: url('./fonts/raleway/ralewayExtraBold.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: ralewayBlack;
+	src: url('./fonts/raleway/ralewayBlack.ttf') format('opentype');
+}
