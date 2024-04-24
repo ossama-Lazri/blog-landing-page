@@ -5,5 +5,5 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 export default defineConfig({
   plugins: [svelte()],
   assetsInclude: ['src/fonts/**'],
-  base: '/blog-landing-svelte/',
+  base: '/blog-landing-page/',
 })
