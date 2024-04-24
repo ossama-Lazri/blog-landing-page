@@ -11,7 +11,7 @@
     const toggleMenuContent = () => isMobile = !isMobile
 </script>
 
-<div class="font-ralewayRegular">
+<div class="font-ralewayRegular ">
 
     <nav class="bg-white lg:py-[1.31rem] md:py-[0.9rem] py-[1.31rem] border">
         <div class="container mx-auto flex justify-between items-center lg:px-0 px-6">
